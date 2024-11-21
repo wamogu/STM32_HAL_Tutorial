@@ -1,0 +1,33 @@
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #eee;
+  padding: 0 8px;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.nav-list .nav-item {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.nav-list .nav-item a {
+  color: #333333;
+  font-size: 18px;
+}
+
+/**
+ * @Fix:
+ * 修复翻页遮挡当行蓝，导致无法点击
+ */
+.navigation {
+  height: 50% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
